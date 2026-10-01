@@ -1,0 +1,138 @@
+:root {
+  --primary: #6ba292;
+  --primary-dark: #5a8976;
+  --accent: #c6a664;
+  --bg-main: #faf9f7;
+  --bg-card: #ece8e1;
+  --bg-soft: rgba(255, 255, 255, 0.72);
+  --text-dark: #333333;
+  --text-light: #777777;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --section-padding: clamp(64px, 9vw, 92px) clamp(16px, 4vw, 28px);
+  --container-width: 1120px;
+  --radius-card: 18px;
+  --shadow-soft: 0 14px 38px rgba(0, 0, 0, 0.08);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--bg-main);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+.heading {
+  font-family: var(--font-heading);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 0 6px rgba(107, 162, 146, 0.3);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid rgba(107, 162, 146, 0.8);
+  outline-offset: 3px;
+}
+
+a[href^="tel"] {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  width: min(280px, calc(100vw - 32px));
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 18px;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.14);
+  border: 1px solid rgba(198, 166, 100, 0.16);
+  padding: 14px;
+  z-index: 2000;
+  backdrop-filter: blur(16px);
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 11px 12px;
+  color: var(--text-dark);
+  border-radius: 12px;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.menu-item:hover {
+  background: var(--bg-card);
+  transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 15px;
+  }
+
+  .dropdown {
+    right: 0;
+    width: min(280px, calc(100vw - 24px));
+  }
+}
