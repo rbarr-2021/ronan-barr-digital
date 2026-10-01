@@ -20,7 +20,7 @@ function Home() {
         <div className="container">
           <p className="eyebrow">Ronan Barr Digital</p>
 
-          <h1>Practical digital solutions for small businesses.</h1>
+          <h1>Website & Software Development for Small Businesses in County Down</h1>
 
           <p className="hero-copy">
             Websites, workflow improvements and simple software tools designed
@@ -109,6 +109,25 @@ function Home() {
         </div>
       </section>
 
+      <section className="section local-section" id="location">
+        <div className="container narrow">
+          <p className="eyebrow">County Down & Northern Ireland</p>
+
+          <h2>Digital support for local businesses.</h2>
+
+          <p>
+            I work with small businesses across County Down and Northern Ireland,
+            helping with website development, software development, business systems
+            and practical digital improvements.
+          </p>
+
+          <p>
+            Whether you are based in Newcastle, Downpatrick, Newry, Belfast or
+            elsewhere in Northern Ireland, I can help you improve how your business
+            works online and behind the scenes.
+          </p>
+        </div>
+      </section>
       <section className="section" id="about">
         <div className="container narrow">
           <p className="eyebrow">About</p>
@@ -187,6 +206,8 @@ function Home() {
 }
 
 export default Home
+
+
 
 
 
