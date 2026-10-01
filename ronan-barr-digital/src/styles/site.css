@@ -788,3 +788,157 @@ body {
   }
 }
 
+
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 1px;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.brand-name {
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+
+.brand-sub {
+  color: #67e8f9;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 760px) {
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .brand-sub {
+    font-size: 0.58rem;
+  }
+}
+
+/* Refined project typography */
+
+.project-card {
+  min-height: 300px;
+  padding: 32px;
+}
+
+.project-label {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: #67e8f9;
+}
+
+.project-card h3 {
+  margin: 0 0 18px;
+  font-size: clamp(1.55rem, 2vw, 1.9rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+.project-card p {
+  max-width: 520px;
+  margin: 0;
+  color: #9ca9bc;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 32px;
+  color: #dbeafe;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.project-link-muted {
+  color: #718096;
+}
+
+.external-icon {
+  position: relative;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #718096;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.external-icon::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 1px;
+  background: #67e8f9;
+  right: 2px;
+  top: 4px;
+  transform: rotate(-45deg);
+  transform-origin: right center;
+}
+
+.external-icon::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #67e8f9;
+  border-right: 1px solid #67e8f9;
+  right: 2px;
+  top: 2px;
+}
+
+.project-card:hover .external-icon {
+  border-color: #67e8f9;
+}
+
+@media (max-width: 760px) {
+  .project-card {
+    min-height: 260px;
+    padding: 26px;
+  }
+
+  .project-card h3 {
+    font-size: 1.55rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+  }
+}
+
+
+.service-hero {
+  min-height: 72vh;
+}
+
+.text-link {
+  display: inline-flex;
+  margin-top: 20px;
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .service-hero {
+    min-height: auto;
+  }
+}
+

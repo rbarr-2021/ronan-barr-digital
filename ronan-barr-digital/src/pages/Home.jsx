@@ -9,6 +9,8 @@ function Home() {
 
           <nav className="nav-links" aria-label="Main navigation">
             <a href="#services">Services</a>
+            <a href="/website-development-northern-ireland">Websites</a>
+            <a href="/software-development-northern-ireland">Software</a>
             <a href="#work">Work</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
@@ -20,7 +22,7 @@ function Home() {
         <div className="container">
           <p className="eyebrow">Ronan Barr Digital</p>
 
-          <h1>Website & Software Development for Small Businesses in County Down</h1>
+          <h1>Practical Website & Software Development for Small Businesses in Northern Ireland</h1>
 
           <p className="hero-copy">
             Websites, workflow improvements and simple software tools designed
@@ -74,12 +76,12 @@ function Home() {
         </div>
       </section>
 
-      <section className="section muted-section" id="work">
+            <section className="section muted-section" id="work">
         <div className="container">
-          <p className="eyebrow">Recent Work</p>
-          <h2>Digital projects built around practical business needs.</h2>
+          <p className="eyebrow">Selected Work</p>
+          <h2>Projects built around real business problems.</h2>
 
-                    <div className="project-grid">
+          <div className="project-grid">
 
             <a
               className="project-card featured-project"
@@ -88,21 +90,19 @@ function Home() {
               rel="noreferrer"
             >
               <div className="project-top">
-                <span className="project-label">Platform Development</span>
-                <span className="project-arrow" aria-hidden="true">?</span>
+                <span className="project-label">Hospitality Platform</span>
+                <span className="external-icon" aria-hidden="true"></span>
               </div>
 
-              <h3>NexHyr</h3>
+                            <h3>NexHyr</h3>
 
               <p>
-                A hospitality staffing platform covering worker and business
-                onboarding, shift management, payments, administration and
-                operational workflows.
+                A hospitality staffing platform designed around the full shift
+                journey - from worker and business onboarding through matching,
+                payments and administration.
               </p>
 
-              <span className="project-link">
-                Visit NexHyr ?
-              </span>
+              <span className="project-link">View project</span>
             </a>
 
             <a
@@ -112,38 +112,34 @@ function Home() {
               rel="noreferrer"
             >
               <div className="project-top">
-                <span className="project-label">Website & Digital Systems</span>
-                <span className="project-arrow" aria-hidden="true">?</span>
+                <span className="project-label">Website & Business Systems</span>
+                <span className="external-icon" aria-hidden="true"></span>
               </div>
 
               <h3>Retreat by the Mournes</h3>
 
               <p>
-                Website and digital support for a growing wellness and sports
-                treatment business, creating a professional online presence
-                alongside practical business systems.
+                A modern website and supporting digital tools for an independent
+                wellness and sports treatment business in County Down.
               </p>
 
-              <span className="project-link">
-                Visit Retreat by the Mournes ?
-              </span>
+              <span className="project-link">View project</span>
             </a>
 
             <article className="project-card">
               <div className="project-top">
-                <span className="project-label">Custom Development</span>
-                <span className="project-arrow" aria-hidden="true">?</span>
+                <span className="project-label">Custom Software</span>
               </div>
 
               <h3>Bespoke Business Tools</h3>
 
               <p>
-                Audit systems, QR applications, workflow tools and operational
-                web applications built around real business problems.
+                Small digital products created to simplify real operational
+                problems, including audit tools, QR systems and internal web apps.
               </p>
 
-              <span className="project-link">
-                Custom software & prototypes
+              <span className="project-link project-link-muted">
+                Built around individual business needs
               </span>
             </article>
 
@@ -248,6 +244,8 @@ function Home() {
 }
 
 export default Home
+
+
 
 
 
