@@ -1,12 +1,55 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#111827"/>
-  <text
-    x="32"
-    y="40"
-    text-anchor="middle"
-    font-family="Arial, sans-serif"
-    font-size="25"
-    font-weight="700"
-    fill="white"
-  >RB</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#050816"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="14" fill="url(#bg)"/>
+
+  <rect
+    x="1"
+    y="1"
+    width="62"
+    height="62"
+    rx="13"
+    fill="none"
+    stroke="#67e8f9"
+    stroke-opacity="0.35"
+  />
+
+  <path
+    d="M17 15H34C42 15 47 19 47 26C47 31 44 34 40 35.5C45 37 48 41 48 46C48 53 43 57 35 57H17V15Z"
+    fill="none"
+    stroke="#8be9ff"
+    stroke-width="4"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M26 24V48"
+    fill="none"
+    stroke="#8be9ff"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+
+  <path
+    d="M26 24H34C38 24 40 26 40 29C40 32 38 34 34 34H26"
+    fill="none"
+    stroke="#8be9ff"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <path
+    d="M26 34H35C40 34 42 36 42 40C42 44 40 46 35 46H26"
+    fill="none"
+    stroke="#8be9ff"
+    stroke-width="4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
 </svg>
