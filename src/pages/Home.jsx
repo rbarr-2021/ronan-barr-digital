@@ -1,4 +1,7 @@
+import { useState } from "react"
+
 function Home() {
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <main className="digital-site">
       <header className="site-header">
