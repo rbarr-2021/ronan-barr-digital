@@ -243,13 +243,6 @@ a {
   justify-content: space-between;
   gap: 30px;
 }
-
-.brand {
-  text-decoration: none;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-}
-
 .nav-links {
   display: flex;
   align-items: center;
@@ -278,10 +271,6 @@ a {
 
   .nav-links a {
     font-size: 0.85rem;
-  }
-
-  .brand {
-    font-size: 0.95rem;
   }
 }
 
@@ -503,11 +492,6 @@ body {
   border-bottom: 1px solid rgba(148, 163, 184, 0.12);
   backdrop-filter: blur(20px);
 }
-
-.brand {
-  color: #ffffff;
-}
-
 .nav-links a {
   color: #94a3b8;
 }
@@ -787,39 +771,7 @@ body {
     background-size: 30px 30px;
   }
 }
-
-
-.brand {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 1px;
-  text-decoration: none;
-  line-height: 1;
-}
-
-.brand-name {
-  color: #ffffff;
-  font-size: 1.05rem;
-  font-weight: 800;
-  letter-spacing: -0.035em;
-}
-
-.brand-sub {
-  color: #67e8f9;
-  font-size: 0.62rem;
-  font-weight: 800;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-
 @media (max-width: 760px) {
-  .brand-name {
-    font-size: 1rem;
-  }
-
-  .brand-sub {
-    font-size: 0.58rem;
-  }
 }
 
 /* Refined project typography */
@@ -940,5 +892,655 @@ body {
   .service-hero {
     min-height: auto;
   }
+}
+
+
+/* Crisp header brand */
+.site-header {
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+
+/* Sharper header */
+
+.site-header {
+  background: #070b18;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+/* Final brand refinement */
+
+/* ===== Header Brand ===== */
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.brand-sub {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #67e8f9;
+}
+
+@media (max-width: 760px) {
+  .brand-name {
+    font-size: 1.15rem;
+  }
+
+  .brand-sub {
+    font-size: 0.7rem;
+  }
+}
+
+/* ===== Header Recovery ===== */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #0b1020;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.nav-wrap {
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.brand-name {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 1.28rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.brand-sub {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #67e8f9;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #a8b4c7;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 760px) {
+  .nav-wrap {
+    min-height: 64px;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .brand-name {
+    font-size: 1.15rem;
+  }
+
+  .brand-sub {
+    font-size: 0.7rem;
+  }
+
+  .nav-links {
+    width: 100%;
+    gap: 12px 16px;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+}
+
+
+/* ===== Definitive Header Brand Fix ===== */
+
+.site-header .brand,
+.site-header .brand:visited {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  filter: none !important;
+  text-decoration: none;
+}
+
+.site-header .brand-name {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  font-size: 1.3rem !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.01em;
+}
+
+.site-header .brand-sub {
+  color: #67e8f9 !important;
+  opacity: 1 !important;
+  font-size: 0.76rem !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 760px) {
+  .site-header .brand-name {
+    font-size: 1.18rem !important;
+  }
+
+  .site-header .brand-sub {
+    font-size: 0.7rem !important;
+  }
+}
+
+
+/* ===== Clean Responsive Header + Hero ===== */
+
+.site-header {
+  background: #070b18;
+}
+
+.nav-wrap {
+  min-height: 68px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.site-header .brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.site-header .brand-name {
+  font-size: 1.18rem !important;
+  font-weight: 400 !important;
+  color: #ffffff !important;
+}
+
+.site-header .brand-sub {
+  font-size: 0.7rem !important;
+  font-weight: 400 !important;
+  color: #67e8f9 !important;
+  letter-spacing: 0.08em;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 22px;
+  width: auto;
+  flex-wrap: nowrap;
+}
+
+.nav-links a {
+  font-size: 0.9rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .nav-wrap {
+    min-height: 64px;
+    gap: 16px;
+  }
+
+  .nav-links {
+    gap: 14px;
+  }
+
+  .nav-links a {
+    font-size: 0.82rem;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(3rem, 8vw, 4.8rem);
+    line-height: 1.02;
+  }
+}
+
+@media (max-width: 620px) {
+  .nav-wrap {
+    min-height: 58px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .site-header .brand-name {
+    font-size: 1.05rem !important;
+  }
+
+  .site-header .brand-sub {
+    font-size: 0.62rem !important;
+  }
+
+  .nav-links {
+    gap: 11px;
+  }
+
+  .nav-links a {
+    font-size: 0.76rem;
+  }
+
+  .hero-section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(2.55rem, 10vw, 3.8rem);
+    line-height: 1.03;
+    letter-spacing: -0.045em;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-wrap {
+    align-items: center;
+  }
+
+  .nav-links {
+    overflow-x: auto;
+    justify-content: flex-start;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(2.35rem, 11vw, 3.2rem);
+  }
+}
+
+
+/* ===== Brand Wordmark Upgrade ===== */
+
+.site-header .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+}
+
+.site-header .brand-name {
+  font-size: 1.18rem !important;
+  font-weight: 500 !important;
+  letter-spacing: -0.025em;
+  color: #ffffff !important;
+}
+
+.site-header .brand-sub {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(103, 232, 249, 0.32);
+  background: rgba(103, 232, 249, 0.08);
+  color: #67e8f9 !important;
+  font-size: 0.6rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 620px) {
+  .site-header .brand-name {
+    font-size: 1.05rem !important;
+  }
+
+  .site-header .brand-sub {
+    min-height: 20px;
+    padding: 0 7px;
+    font-size: 0.56rem !important;
+  }
+}
+
+
+/* ===== Geometric RB Brand Mark ===== */
+
+.site-header .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid rgba(103, 232, 249, 0.35);
+  background:
+    linear-gradient(145deg, rgba(37, 99, 235, 0.24), rgba(6, 182, 212, 0.08));
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  box-shadow:
+    inset 0 0 0 1px rgba(255,255,255,0.02),
+    0 6px 18px rgba(6, 182, 212, 0.12);
+}
+
+.brand-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-header .brand-name {
+  font-size: 1.12rem !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.02em;
+  color: #ffffff !important;
+}
+
+.site-header .brand-sub {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 0 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(103, 232, 249, 0.28);
+  background: rgba(103, 232, 249, 0.07);
+  color: #67e8f9 !important;
+  font-size: 0.58rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 620px) {
+  .brand-mark {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    font-size: 0.72rem;
+  }
+
+  .site-header .brand-name {
+    font-size: 1rem !important;
+  }
+
+  .site-header .brand-sub {
+    min-height: 20px;
+    padding: 0 7px;
+    font-size: 0.54rem !important;
+  }
+}
+
+
+/* ===== Hero refinement ===== */
+
+.hero-section h1 {
+  max-width: 900px;
+  font-size: clamp(3.4rem, 6vw, 5.6rem);
+  line-height: 0.98;
+}
+
+.hero-copy {
+  max-width: 680px;
+  margin-top: 26px;
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 760px) {
+  .hero-section h1 {
+    font-size: clamp(2.6rem, 10vw, 4rem);
+    line-height: 1.02;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+  }
+}
+
+
+/* ===== Brand typography match ===== */
+
+.site-header .brand-name {
+  font-size: 0.82rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #ffffff !important;
+}
+
+.site-header .brand-sub {
+  font-size: 0.62rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #67e8f9 !important;
+}
+
+
+/* ===== Cohesive Brand Lockup ===== */
+
+.site-header .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+}
+
+.brand-mark {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.brand-text {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+}
+
+.site-header .brand-name {
+  font-size: 0.78rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #ffffff !important;
+}
+
+.site-header .brand-sub {
+  display: inline;
+  min-height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #67e8f9 !important;
+}
+
+
+/* ===== Premium Tech RB Mark ===== */
+
+.brand-mark {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  border-radius: 9px;
+  border: 1px solid rgba(103, 232, 249, 0.22);
+
+  background:
+    linear-gradient(145deg, rgba(17, 24, 39, 0.96), rgba(6, 17, 35, 0.98));
+
+  color: #e6f7ff;
+
+  font-family: Inter, Arial, sans-serif;
+  font-size: 0.69rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.05),
+    inset 0 0 22px rgba(59,130,246,0.08),
+    0 0 0 1px rgba(59,130,246,0.04),
+    0 8px 22px rgba(0,0,0,0.28),
+    0 0 24px rgba(6,182,212,0.08);
+}
+
+.brand-mark::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: 8px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(103,232,249,0.10),
+      transparent 38%,
+      transparent 62%,
+      rgba(37,99,235,0.10)
+    );
+  pointer-events: none;
+}
+
+.brand-mark::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  top: 7px;
+  right: -3px;
+  background: linear-gradient(90deg, transparent, #67e8f9);
+  transform: rotate(-45deg);
+  opacity: 0.85;
+  box-shadow: 0 0 8px rgba(103,232,249,0.5);
+}
+
+.site-header .brand:hover .brand-mark {
+  border-color: rgba(103,232,249,0.42);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    inset 0 0 24px rgba(59,130,246,0.10),
+    0 10px 28px rgba(0,0,0,0.32),
+    0 0 28px rgba(6,182,212,0.14);
+}
+
+
+/* ===== Bespoke RB Monogram ===== */
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid rgba(103, 232, 249, 0.18);
+  background:
+    linear-gradient(145deg, rgba(13, 21, 40, 0.98), rgba(5, 12, 28, 0.98));
+  color: #8be9ff;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.04),
+    0 10px 26px rgba(0,0,0,0.24),
+    0 0 22px rgba(6,182,212,0.08);
+}
+
+.brand-mark-svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.site-header .brand:hover .brand-mark {
+  color: #ffffff;
+  border-color: rgba(103, 232, 249, 0.38);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.05),
+    0 12px 30px rgba(0,0,0,0.28),
+    0 0 28px rgba(6,182,212,0.14);
+}
+
+
+/* Stronger premium monogram */
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 9px;
+}
+
+.brand-mark-svg {
+  width: 28px;
+  height: 28px;
+}
+
+.brand-mark-svg path {
+  stroke-width: 2.7;
 }
 

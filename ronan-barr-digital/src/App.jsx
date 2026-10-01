@@ -1,4 +1,4 @@
-﻿import Home from "./pages/Home"
+import Home from "./pages/Home"
 import WebsiteDevelopment from "./pages/WebsiteDevelopment"
 import SoftwareDevelopment from "./pages/SoftwareDevelopment"
 import "./styles/site.css"

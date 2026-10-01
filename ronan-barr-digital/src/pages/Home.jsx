@@ -4,8 +4,45 @@ function Home() {
       <header className="site-header">
         <div className="container nav-wrap">
           <a className="brand" href="#top">
-            Ronan Barr Digital
-          </a>
+  <span className="brand-mark" aria-hidden="true">
+  <svg viewBox="0 0 40 40" className="brand-mark-svg">
+    <path
+      d="M10 9H20.5C25.5 9 28.5 11.7 28.5 16C28.5 19.2 26.8 21.2 24.1 22.1C27.5 22.9 29.5 25.3 29.5 28.8C29.5 33 26.4 35.5 21.2 35.5H10V9Z"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M16 15V29"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+    />
+    <path
+      d="M16 15H21.5C23.8 15 25 16 25 17.8C25 19.6 23.8 20.6 21.5 20.6H16"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M16 20.6H22C24.7 20.6 26.2 21.9 26.2 24.1C26.2 26.4 24.7 27.8 22 27.8H16"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+</span>
+  <span className="brand-text">
+    <span className="brand-name">Ronan Barr</span>
+    <span className="brand-sub">Digital</span>
+  </span>
+</a>
 
           <nav className="nav-links" aria-label="Main navigation">
             <a href="#services">Services</a>
