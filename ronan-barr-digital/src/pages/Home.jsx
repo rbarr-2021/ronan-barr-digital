@@ -79,32 +79,74 @@ function Home() {
           <p className="eyebrow">Recent Work</p>
           <h2>Digital projects built around practical business needs.</h2>
 
-          <div className="work-list">
-            <article className="work-item">
-              <h3>NexHyr</h3>
-              <p>
-                Development of a hospitality staffing platform covering worker
-                and business onboarding, shift management, payments,
-                administration and operational workflows.
-              </p>
-            </article>
+                    <div className="project-grid">
 
-            <article className="work-item">
+            <a
+              className="project-card featured-project"
+              href="https://nexhyr.co.uk/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="project-top">
+                <span className="project-label">Platform Development</span>
+                <span className="project-arrow" aria-hidden="true">?</span>
+              </div>
+
+              <h3>NexHyr</h3>
+
+              <p>
+                A hospitality staffing platform covering worker and business
+                onboarding, shift management, payments, administration and
+                operational workflows.
+              </p>
+
+              <span className="project-link">
+                Visit NexHyr ?
+              </span>
+            </a>
+
+            <a
+              className="project-card"
+              href="https://www.mourneretreat.co.uk/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className="project-top">
+                <span className="project-label">Website & Digital Systems</span>
+                <span className="project-arrow" aria-hidden="true">?</span>
+              </div>
+
               <h3>Retreat by the Mournes</h3>
+
               <p>
                 Website and digital support for a growing wellness and sports
-                treatment business, focused on creating a professional online
-                presence and supporting business operations.
+                treatment business, creating a professional online presence
+                alongside practical business systems.
               </p>
+
+              <span className="project-link">
+                Visit Retreat by the Mournes ?
+              </span>
+            </a>
+
+            <article className="project-card">
+              <div className="project-top">
+                <span className="project-label">Custom Development</span>
+                <span className="project-arrow" aria-hidden="true">?</span>
+              </div>
+
+              <h3>Bespoke Business Tools</h3>
+
+              <p>
+                Audit systems, QR applications, workflow tools and operational
+                web applications built around real business problems.
+              </p>
+
+              <span className="project-link">
+                Custom software & prototypes
+              </span>
             </article>
 
-            <article className="work-item">
-              <h3>Bespoke Business Tools</h3>
-              <p>
-                Practical tools and prototypes including audit systems,
-                QR-based applications and internal operational web applications.
-              </p>
-            </article>
           </div>
         </div>
       </section>
@@ -206,6 +248,7 @@ function Home() {
 }
 
 export default Home
+
 
 
 
