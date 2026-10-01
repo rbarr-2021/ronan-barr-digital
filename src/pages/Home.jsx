@@ -2,6 +2,38 @@ import { useState } from "react"
 
 function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [formStatus, setFormStatus] = useState("idle")
+
+  async function handleSubmit(event) {
+    event.preventDefault()
+
+    const form = event.currentTarget
+    const formData = new FormData(form)
+
+    setFormStatus("sending")
+
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/ajax/rbarr1983@gmail.com",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json"
+          },
+          body: formData
+        }
+      )
+
+      if (!response.ok) {
+        throw new Error("Submission failed")
+      }
+
+      form.reset()
+      setFormStatus("success")
+    } catch {
+      setFormStatus("error")
+    }
+  }
   return (
     <main className="digital-site">
       <header className="site-header">
@@ -261,54 +293,157 @@ function Home() {
       </section>
 
             <section className="section contact-section" id="contact">
-        <div className="container narrow">
-          <p className="eyebrow">Get In Touch</p>
+  <div className="container contact-layout">
 
-          <h2>Have something in your business that could work better?</h2>
+    <div className="contact-intro">
+      <p className="eyebrow">Get In Touch</p>
 
-          <p>
-            Whether it&apos;s a website, a manual process, an admin headache or
-            an idea you&apos;d like to explore, get in touch and we can talk
-            through the options.
-          </p>
+      <h2>Have something in your business that could work better?</h2>
 
-          <div className="contact-actions">
-            <a
-              className="primary-button"
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=rbarr1983@gmail.com" target="_blank" rel="noreferrer"
-            >
-              Email Ronan
-            </a>
+      <p>
+        Tell me a little about what you need. Whether it's a website,
+        software idea, manual process or digital problem, I'll come back
+        to you to discuss the best way forward.
+      </p>
 
-            <a
-              className="secondary-button"
-              href="tel:+447809338779"
-            >
-              Call 07809 338779
-            </a>
+      <div className="contact-direct">
+        <a href="tel:+447809338779">
+          <span className="contact-method-label">Call</span>
+          <span>07809 338779</span>
+        </a>
 
-            <a
-              className="whatsapp-button"
-              href="https://wa.me/447809338779"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Message Ronan on WhatsApp"
-            >
-              <svg
-                className="whatsapp-icon"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill="currentColor"
-                  d="M20.52 3.48A11.87 11.87 0 0 0 12.07 0C5.49 0 .14 5.35.14 11.93c0 2.1.55 4.15 1.6 5.96L.04 24l6.29-1.65a11.9 11.9 0 0 0 5.73 1.46h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.19-3.48-8.4ZM12.07 21.8h-.01a9.86 9.86 0 0 1-5.03-1.38l-.36-.21-3.73.98 1-3.64-.24-.37a9.86 9.86 0 0 1-1.52-5.25c0-5.46 4.45-9.91 9.92-9.91a9.84 9.84 0 0 1 7.01 2.91 9.84 9.84 0 0 1 2.9 7.01c-.01 5.47-4.46 9.92-9.94 9.92Zm5.44-7.43c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.62.72.23 1.37.2 1.89.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
-                />
-              </svg>
-              <span>WhatsApp Ronan</span>
-            </a>
-          </div>
+        <a
+          href="https://wa.me/447809338779"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="contact-method-label">WhatsApp</span>
+          <span>Message Ronan</span>
+        </a>
+      </div>
+    </div>
+
+    <form
+      className="contact-form"
+      onSubmit={handleSubmit}
+    >
+      <input
+        type="hidden"
+        name="_subject"
+        value="New Ronan Barr Digital enquiry"
+      />
+
+      <input
+        type="hidden"
+        name="_template"
+        value="table"
+      />
+<input
+        type="text"
+        name="_honey"
+        className="form-honeypot"
+        tabIndex="-1"
+        autoComplete="off"
+      />
+
+      <div className="form-row">
+        <label>
+          <span>Name</span>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+        </label>
+
+        <label>
+          <span>Email</span>
+          <input
+            type="email"
+            name="email"
+            placeholder="you@business.com"
+            required
+          />
+        </label>
+      </div>
+
+      <label>
+        <span>Business name</span>
+        <input
+          type="text"
+          name="business"
+          placeholder="Your business or organisation"
+        />
+      </label>
+
+      <label>
+        <span>What can I help with?</span>
+        <select name="service" defaultValue="">
+          <option value="" disabled>
+            Select an option
+          </option>
+          <option value="Website development">
+            Website development
+          </option>
+          <option value="Software development">
+            Software development
+          </option>
+          <option value="Business systems">
+            Business systems
+          </option>
+          <option value="Process improvement">
+            Process improvement
+          </option>
+          <option value="Other digital support">
+            Other digital support
+          </option>
+        </select>
+      </label>
+
+      <label>
+        <span>Tell me about the project</span>
+        <textarea
+          name="message"
+          rows="6"
+          placeholder="What are you trying to improve, build or solve?"
+          required
+        ></textarea>
+      </label>
+
+      <button
+        type="submit"
+        className="contact-submit"
+        disabled={formStatus === "sending"}
+      >
+        Send enquiry
+        <span className="submit-arrow" aria-hidden="true">
+  <svg viewBox="0 0 24 24">
+    <path d="M5 12h14M13 6l6 6-6 6" />
+  </svg>
+</span>
+      </button>
+
+      {formStatus === "success" && (
+        <div className="form-success" role="status">
+          <strong>Message sent.</strong>
+          <span>Thanks for getting in touch. I'll get back to you as soon as I can.</span>
         </div>
-      </section>
+      )}
+
+      {formStatus === "error" && (
+        <div className="form-error" role="alert">
+          Something went wrong. Please try again or contact me by WhatsApp.
+        </div>
+      )}
+
+      <p className="form-note">
+        Your enquiry will be sent directly to Ronan Barr Digital.
+      </p>
+    </form>
+
+  </div>
+</section>
     </main>
   )
 }
