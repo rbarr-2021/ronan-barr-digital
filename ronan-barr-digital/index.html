@@ -2,110 +2,91 @@
 <html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#faf9f7" />
-    <meta name="application-name" content="Retreat by the Mournes" />
-    <meta name="apple-mobile-web-app-title" content="Retreat by the Mournes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="robots" content="index, follow" />
-    <meta name="author" content="Retreat by the Mournes" />
 
-    <title>Retreat by the Mournes | Boutique Wellness & Massage in Newcastle, Co. Down</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta name="theme-color" content="#111827" />
+
+    <meta
+      name="application-name"
+      content="Ronan Barr Digital"
+    />
+
+    <meta
+      name="author"
+      content="Ronan Barr"
+    />
+
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+
+    <title>
+      Ronan Barr Digital | Practical Digital Solutions for Small Businesses
+    </title>
 
     <meta
       name="description"
-      content="Retreat by the Mournes offers premium massage, sports therapy, facials and restorative wellness treatments in Newcastle, County Down beneath the Mourne Mountains."
+      content="Ronan Barr Digital provides practical websites, business systems, workflow improvements and digital support for small businesses in Northern Ireland."
     />
-    <link rel="canonical" href="https://www.mourneretreat.co.uk/" />
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet" />
+    <meta
+      property="og:type"
+      content="website"
+    />
 
-    <!-- Icons -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <meta
+      property="og:site_name"
+      content="Ronan Barr Digital"
+    />
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Retreat by the Mournes" />
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:title" content="Retreat by the Mournes | Boutique Wellness & Massage in Newcastle, Co. Down" />
+    <meta
+      property="og:locale"
+      content="en_GB"
+    />
+
+    <meta
+      property="og:title"
+      content="Ronan Barr Digital | Practical Digital Solutions for Small Businesses"
+    />
+
     <meta
       property="og:description"
-      content="Retreat by the Mournes offers premium massage, sports therapy, facials and restorative wellness treatments in Newcastle, County Down beneath the Mourne Mountains."
+      content="Practical websites, business systems and digital solutions designed to solve real business problems."
     />
-    <meta property="og:image" content="https://www.mourneretreat.co.uk/preview.jpg" />
-    <meta property="og:image:alt" content="Retreat by the Mournes preview image" />
-    <meta property="og:url" content="https://www.mourneretreat.co.uk/" />
 
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Retreat by the Mournes | Boutique Wellness & Massage in Newcastle, Co. Down" />
+    <meta
+      name="twitter:card"
+      content="summary"
+    />
+
+    <meta
+      name="twitter:title"
+      content="Ronan Barr Digital"
+    />
+
     <meta
       name="twitter:description"
-      content="Retreat by the Mournes offers premium massage, sports therapy, facials and restorative wellness treatments in Newcastle, County Down beneath the Mourne Mountains."
+      content="Practical websites, business systems and digital support for small businesses."
     />
-    <meta name="twitter:image" content="https://www.mourneretreat.co.uk/preview.jpg" />
 
-    <script>
-      (function () {
-        const siteName = "Retreat by the Mournes"
-        const baseUrl = "https://www.mourneretreat.co.uk"
-        const metaByPath = {
-          "/": {
-            title: "Retreat by the Mournes | Boutique Wellness & Massage in Newcastle, Co. Down",
-            description:
-              "Retreat by the Mournes offers premium massage, sports therapy, facials and restorative wellness treatments in Newcastle, County Down beneath the Mourne Mountains.",
-          },
-          "/treatments": {
-            title: "Treatments | Retreat by the Mournes",
-            description:
-              "Discover therapeutic massage, sports massage, facials and signature wellness treatments using Neal's Yard Remedies Organic products.",
-          },
-          "/about": {
-            title: "About Beata | Retreat by the Mournes",
-            description:
-              "Meet Beata and discover over 20 years of experience helping clients restore body and mind through expert therapeutic treatments.",
-          },
-        }
-
-        const pageMeta = metaByPath[window.location.pathname] || metaByPath["/"]
-        const canonical = baseUrl + (window.location.pathname || "/")
-
-        document.title = pageMeta.title
-
-        const applyMeta = (selector, attribute, value) => {
-          const element = document.querySelector(selector)
-          if (element) {
-            element.setAttribute(attribute, value)
-          }
-        }
-
-        applyMeta('meta[name="description"]', "content", pageMeta.description)
-        applyMeta('meta[property="og:title"]', "content", pageMeta.title)
-        applyMeta('meta[property="og:description"]', "content", pageMeta.description)
-        applyMeta('meta[property="og:url"]', "content", canonical)
-        applyMeta('meta[name="twitter:title"]', "content", pageMeta.title)
-        applyMeta('meta[name="twitter:description"]', "content", pageMeta.description)
-
-        const canonicalLink = document.querySelector('link[rel="canonical"]')
-        if (canonicalLink) {
-          canonicalLink.setAttribute("href", canonical)
-        }
-
-        applyMeta('meta[name="application-name"]', "content", siteName)
-        applyMeta('meta[name="apple-mobile-web-app-title"]', "content", siteName)
-      })()
-    </script>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/favicon.svg"
+    />
   </head>
 
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+
+    <script
+      type="module"
+      src="/src/main.jsx"
+    ></script>
   </body>
 </html>
