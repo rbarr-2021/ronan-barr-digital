@@ -47,14 +47,44 @@ function Home() {
   </span>
 </a>
 
-          <nav className="nav-links" aria-label="Main navigation">
-            <a href="#services">Services</a>
-            <a href="/website-development-northern-ireland">Websites</a>
-            <a href="/software-development-northern-ireland">Software</a>
-            <a href="#work">Work</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-          </nav>
+          <div className="nav-area">
+  <nav className="nav-links desktop-nav" aria-label="Main navigation">
+    <a href="#services">Services</a>
+    <a href="/website-development-northern-ireland">Websites</a>
+    <a href="/software-development-northern-ireland">Software</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button
+    className={`menu-toggle ${menuOpen ? "is-open" : ""}`}
+    type="button"
+    aria-label="Toggle navigation"
+    aria-expanded={menuOpen}
+    onClick={() => setMenuOpen(!menuOpen)}
+  >
+    <span></span>
+    <span></span>
+  </button>
+</div>
+
+<div className={`mobile-menu ${menuOpen ? "is-open" : ""}`}>
+  <a href="#services" onClick={() => setMenuOpen(false)}>Services</a>
+  <a href="/website-development-northern-ireland" onClick={() => setMenuOpen(false)}>Websites</a>
+  <a href="/software-development-northern-ireland" onClick={() => setMenuOpen(false)}>Software</a>
+  <a href="#work" onClick={() => setMenuOpen(false)}>Work</a>
+  <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+  <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+
+  <a
+    className="mobile-menu-cta"
+    href="#contact"
+    onClick={() => setMenuOpen(false)}
+  >
+    Let's Talk
+  </a>
+</div>
         </div>
       </header>
 
